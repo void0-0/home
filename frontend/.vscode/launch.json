@@ -2,39 +2,13 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Start and Debug Angular",
-            "type": "chrome",
+            "type": "node",
             "request": "launch",
-            "url": "http://localhost:4200",
-            "webRoot": "${workspaceFolder}",
-            "sourceMapPathOverrides": {
-                "webpack:///src/*": "${webRoot}/src/*"
-            },
-            "preLaunchTask": "ng serve",
-            "timeout": 10000,
-            "smartStep": true,
-            "trace": true
-        },
-        {
-            "name": "Launch Angular App",
-            "type": "chrome",
-            "request": "launch",
-            "url": "http://localhost:4200",
-            "webRoot": "${workspaceFolder}",
-            "sourceMapPathOverrides": {
-                "webpack:///src/*": "${webRoot}/src/*"
-            },
-            "preLaunchTask": "ng serve"
-        },
-        {
-            "name": "Attach to Angular App",
-            "type": "chrome",
-            "request": "attach",
-            "url": "http://localhost:4200",
-            "webRoot": "${workspaceFolder}",
-            "sourceMapPathOverrides": {
-                "webpack:///src/*": "${webRoot}/src/*"
-            }
+            "name": "start",
+            "runtimeExecutable": "npm",
+            "runtimeArgs": ["run", "start"],
+            "console": "integratedTerminal",
+            "skipFiles": ["<node_internals>/**"]
         }
     ]
 }
