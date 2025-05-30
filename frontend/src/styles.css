@@ -1,15 +1,12 @@
 @import "@angular/cdk/overlay-prebuilt.css";
-
-/* You can add global styles to this file, and also import other style files */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "@spartan-ng/brain/hlm-tailwind-preset.css";
+@import "tailwindcss";
 
 :root {
     --font-sans: "";
 }
 
-:root .theme-zinc {
+:root {
     --background: 0 0% 100%;
     --foreground: 240 10% 3.9%;
     --card: 0 0% 100%;
@@ -33,7 +30,7 @@
     color-scheme: light;
 }
 
-.dark .theme-zinc {
+.dark {
     --background: 240 10% 3.9%;
     --foreground: 0 0% 98%;
     --card: 240 10% 3.9%;
